@@ -1,0 +1,346 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+p
+{
+    margin: 0;
+    white-space: nowrap;
+    width: 100vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.row
+{
+  margin: 1%;
+}
+
+.headbutton
+{
+  flex-direction: row;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.searchbar
+{
+  position: relative;
+  margin-left: auto;
+  margin-right: 2%;
+}
+.ssbar
+{
+  border-radius: 10px;
+}
+
+.hash
+{
+  size: 0.5em;
+  border: 0;
+  color: green;
+  background-color: rgb(171, 216, 162);
+  cursor: pointer;
+  font: inherit;
+  position: relative;
+  border-radius: 5px;
+
+}
+.delete
+{
+  size: 0.5em;
+  border: 0;
+  color: rgb(255, 21, 0);
+  font-weight: bold;
+  background-color: rgb(241, 169, 160);
+  cursor: pointer;
+  font: inherit;
+  position: relative;
+  border-radius: 5px;
+}
+.iddelete
+{
+  size: 0.5em;
+  border: 0;
+  color: white;
+  background-color: rgb(242, 38, 19);
+  cursor: pointer;
+  font: inherit;
+  position: relative;
+  border-radius: 5px;
+}
+.cancel
+{
+  size: 0.5em;
+  border: 0;
+  color: rgb(255, 21, 0);
+  font-weight: bold;
+  background-color: rgb(241, 169, 160);
+  cursor: pointer;
+  font: inherit;
+  position: relative;
+  border-radius: 5px;
+}
+.publish
+{
+  size: 0.5em;
+  border: 0;
+  color: blue;
+  background-color: rgb(107, 185, 240);
+  cursor: pointer;
+  font: inherit;
+  position: relative;
+  border-radius: 5px;
+}
+.idpublish
+{
+  size: 0.5em;
+  border: 0;
+  color: white;
+  background-color: rgb(45, 85, 255);
+  cursor: pointer;
+  font: inherit;
+  position: relative;
+  border-radius: 5px;
+}
+.idpublishcontent
+{
+  size: 0.5em;
+  border: 0;
+  color: white;
+  background-color: rgb(45, 85, 255);
+  cursor: pointer;
+  font: inherit;
+  position: relative;
+  border-radius: 5px;
+}
+
+/*whole card*/
+.card-whole
+{
+    background-color: white;
+    box-shadow: 0 9px 17px -6px rgba(0,0,0,1);
+    justify-content: space-around;
+    padding: 2%;
+    margin: 55px;
+    border-radius: 25px;  
+}
+.row-author
+{
+    margin-left: -10;
+}
+
+.row-content
+{
+    display: flex;
+}
+
+
+.card-whole .card-partition
+{
+    background-color: white;
+    box-shadow: 0 9px 17px -6px rgba(0,0,0,1);
+    justify-content: space-around;
+    padding: 1%;
+    left: 15;
+    right: 15;
+    border-radius: 25px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.card-whole .card-partition .card-content {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+  }
+  
+  .card-whole .card-partition .card-content .left-side {
+    grid-column: 1 / 2;
+
+  }
+  
+  .card-whole .card-partition .card-content .left-side .grip{
+    flex-direction: row;
+    display: flex;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .card-whole .card-partition .card-content .left-side .ckbox{
+    flex-direction: row-reverse;
+    display: flex;
+    margin-top: -15px;
+    margin-left: 20px;
+
+  }
+
+
+.card-whole .card-partition .card-content .middle-side {
+    grid-column: 2 / 3;
+    margin-left: 5vh;
+  }
+  .card-whole .card-partition .card-content .right-side {
+    grid-column: 3 / 4;
+    justify-content: space-between;
+  }
+
+/* MODAL */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30em;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-title
+  {
+    font-weight: bold;
+  }
+
+  .modal-pcontent
+  {
+    border: 2px dotted black;
+    padding: 1%;
+  }
+
+  .modal-footer
+  {
+    align-items: center;
+    text-align: center;
+    margin-right: 35%;
+  }
+
+
+  /*publish modal*/
+  .modal-content-publish {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50em;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-subheader-publish
+  {
+    font-weight: bold;
+  }
+
+  .modal-pcontent-publish
+  {
+    border: 2px dotted black;
+    padding: 1%;
+  }
+
+  .modal-footer-publish
+  {
+    align-items: center;
+    text-align: center;
+    margin-right: 35%;
+  }
+
+  .publish-content
+  {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    min-height: 200px;
+    line-height: 20px;
+  }
+  .publish-author
+  {
+    width: 50%;
+    overflow: hidden;
+    resize: none;
+    min-height: 20px;
+    line-height: 20px;
+  }
+  .publish-Title
+  {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    min-height: 20px;
+    line-height: 20px;
+  }
+
+  /*layout Change*/
+  @media only screen and (max-width: 1662px) {
+
+    p { 
+      margin: 0;
+      white-space: nowrap;
+      width: 75vh;
+      overflow: hidden;
+      text-overflow: ellipsis; 
+    }
+ 
+ }
+
+ @media only screen and (max-width: 1336px) {
+
+  p { 
+    margin: 0;
+    white-space: nowrap;
+    width: 50vh;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+}
+@media only screen and (max-width: 930px) {
+
+ p { 
+   margin: 0;
+   white-space: nowrap;
+   width: 30vh;
+   overflow: hidden;
+   text-overflow: ellipsis; 
+ }
+
+}
