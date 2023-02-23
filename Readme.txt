@@ -2,7 +2,7 @@
 Date 23/02/2023 			Deadline 24/02/2023 5:00pm
 
 note:
-A. lophilsexams folder is HTML CSS JAVASCRIPT (via XAMPP and Visual Studio Code)
+A. [RAW PROGRAM] lophilsexams folder is HTML CSS JAVASCRIPT (via XAMPP and Visual Studio Code)
 	1. folder to htdocs
 	2. Run Apache and SQL
 	3. Localhost/lophilsexams
