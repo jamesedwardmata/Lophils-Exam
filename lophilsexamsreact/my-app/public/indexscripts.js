@@ -104,13 +104,20 @@ function appendData(data)
 
             modal.style.display = "block"; //display modal
 
-            var span = document.getElementsByClassName("close")[0]; //get close class
+            const span = document.getElementsByClassName("close"); //get close class
+            for (const btn of span)
+            {
+                btn.addEventListener('click', function() 
+                {
+                    modal.style.display = "none";
+                });
+            } 
 
-            // close modal using X button
+            /*// close modal using X button
             span.onClick = function() 
             {
                 modal.style.display = "none";
-            }
+            }*/
 
             //Button Delete
             const delsid = document.getElementsByClassName("iddelete");
